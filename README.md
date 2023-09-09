@@ -10,7 +10,7 @@ So, you can train with larger batch if you allocate larger data chunk to other G
 ## Example
   
 ```
-  from dataparallel_v2 import CustomDataParallel
+  from custom_dataparallel import CustomDataParallel
 
   import torch.nn as nn
 
