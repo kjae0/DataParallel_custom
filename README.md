@@ -4,8 +4,8 @@ You can set chunk size of each gpus on your own.
 
 Pytorch DataParallel is very simple and easy to use.
 
-But, sometimes multi GPU training with 'DataParallel' makes severe GPU memory imbalance(especially, NLP task) because DataParallel acutally operates on only one main GPU.
-So, you can train with larger batch if you allocate larger data chunk to other GPUs.
+But, sometimes multi GPU training with 'DataParallel' could makes severe GPU memory imbalance(especially, NLP task) because DataParallel acutally operates on only one main GPU.
+So, if you want to train with larger batch and dataparallel, you should allocate larger data chunk to other GPUs.
 
 ## Example
   
