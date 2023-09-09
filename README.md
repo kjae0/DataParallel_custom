@@ -4,6 +4,9 @@ pytorch DataParallel with chunk size
 
 You can set chunk size of each gpus on your own.
 
+  Example
+  
+'''
   from dataparallel_v2 import CustomDataParallel
   
   # your model
@@ -14,4 +17,4 @@ You can set chunk size of each gpus on your own.
   # chunk_size = None -> same as default DataParallel
   
   model = CustomDataParallel(model, chunk_size=chunk_size)
-
+'''
