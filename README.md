@@ -4,7 +4,14 @@ pytorch DataParallel with chunk size
 
 You can set chunk size of each gpus on your own.
 
-  Example
+Pytorch DataParallel is very simple and easy to use.
+
+But, sometimes multi GPU training with 'DataParallel' makes severe GPU memory imbalance(especially, NLP task) because DataParallel acutally operates on only one main GPU.
+You can train with larger batch if you allocate larger data chunk to other GPUs.
+
+
+
+## Example
   
 ```
   from dataparallel_v2 import CustomDataParallel
