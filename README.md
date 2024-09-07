@@ -1,11 +1,6 @@
 # pytorch DataParallel with chunk size
 
-DataParallel with chunk size argument.
-
-Pytorch DataParallel is very simple and easy to use.
-
-But, sometimes multi GPU training with 'DataParallel' could makes severe GPU memory imbalance(especially, NLP task) because DataParallel acutally operates on only one main GPU.
-So, if you wanna train model with larger batch using dataparallel, allocate larger data chunk to other GPUs.
+DataParallel with varying chunk sizes.
 
 ## Example
   
