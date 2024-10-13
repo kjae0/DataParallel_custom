@@ -1,6 +1,7 @@
 # pytorch DataParallel with chunk size
 
-DataParallel with varying chunk sizes.
+DataParallel with custom chunk sizes.
+(for efficient multi-gpu memory usage)
 
 ## Example
   
